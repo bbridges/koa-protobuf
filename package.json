@@ -4,7 +4,8 @@
   "description": "",
   "main": "lib/koa-protobuf.js",
   "scripts": {
-    "test": "mocha"
+    "test": "nyc mocha",
+    "test-no-cover": "mocha"
   },
   "repository": {
     "type": "git",
@@ -22,10 +23,12 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
+    "coveralls": "^3.0.1",
     "koa": "^2.5.1",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
     "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
     "protobufjs": "~6.8.6",
     "request": "^2.87.0",
     "request-promise-native": "^1.0.5"
