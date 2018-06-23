@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message Test1 {
+  uint32 field_1 = 1;
+  bytes field_2 = 2;
+}
