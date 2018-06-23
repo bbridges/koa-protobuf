@@ -21,6 +21,10 @@ $ npm install koa-protobuf
 
 `koa-protobuf` ships with separate parser and sender middleware.
 
+Because protobuf parsing requires the message type to be passed, it is
+recommended to apply the parsing middleware directly to the individual routes
+instead of using it globally.
+
 Example usage with [`koa-router`](https://github.com/alexmingoia/koa-router):
 
 ```js
@@ -34,6 +38,7 @@ import messages from './messages.js';
 let app = new Koa();
 let router = new Router();
 
+// This will encode messages when ctx.proto is set.
 app.use(protobufSender());
 
 // Returns a protobuf message.
@@ -44,9 +49,9 @@ router.get('/api/example', (ctx) => {
 });
 
 // Accepts a protobuf as the content type. Clients should set their
-// content-type to application/x-protobuf (or application/json when using
-// compliant JSON). Otherwise, a 415 status code will be sent back and the
-// next middleware will not run.
+// content-type to application/x-protobuf (or application/json when
+// using compliant JSON). Otherwise, a 415 status code will be sent
+// back and the next middleware will not run.
 router.post('/api/example', protobufParser(messages.Example), (ctx) => {
   console.log(ctx.request.proto);
 });
