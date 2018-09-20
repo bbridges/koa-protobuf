@@ -1,6 +1,6 @@
 {
   "name": "koa-protobuf",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "protobuf.js parser and sender middleware for koa",
   "main": "lib/koa-protobuf.js",
   "scripts": {
