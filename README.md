@@ -3,8 +3,8 @@
 > [protobuf.js](https://github.com/dcodeIO/protobuf.js) parser and sender
 > middleware for [koa](https://koajs.com).
 
-[![Build Status](https://travis-ci.com/bloof-bb/koa-protobuf.svg?branch=master)](https://travis-ci.com/bloof-bb/koa-protobuf)
-[![Test Coverage](https://coveralls.io/repos/github/bloof-bb/koa-protobuf/badge.svg?branch=master)](https://coveralls.io/github/bloof-bb/koa-protobuf?branch=master)
+[![Build Status](https://travis-ci.com/bbridges/koa-protobuf.svg?branch=master)](https://travis-ci.com/bbridges/koa-protobuf)
+[![Test Coverage](https://coveralls.io/repos/github/bbridges/koa-protobuf/badge.svg?branch=master)](https://coveralls.io/github/bbridges/koa-protobuf?branch=master)
 [![NPM Version](https://img.shields.io/npm/v/koa-protobuf.svg)](https://www.npmjs.com/package/koa-protobuf)
 
 *Note: koa v1.x is not supported.*
