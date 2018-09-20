@@ -8,3 +8,11 @@ after_script:
   - nyc report --reporter=text-lcov | ./node_modules/coveralls/bin/coveralls.js
 notifications:
   email: false
+deploy:
+  provider: npm
+  email: blbridges96@gmail.com
+  api_key:
+    secure: C8puhiNfpHo/eOETF2gjZyvEgaqnr8KVgJfbpmZwaO8EBY9bkm0NTxYWFexSlKYyxDurhtPcnRGu/TD+/02b4CMYKBoKxIo+RuzxM8YNDmes+sDl0LmVGO/dp07JbHQKtFbjAb2pAXefI5Lc8rgrXL8c167WYLhVeSCTEUiOFnOBXjvG5xgW2B2aGBkTk/Zfnd+3Yd/0eLiG3V7GOvpMQclX+m8pZbfBcB7IfEzvt0jBbcCVM4CpLsOgV/D2lO+iki2llcNqr0Fsr4Vl3gjSnO2LikSqoepRauuyPb3H0MZR+ar+xD3WyQ7W3mCMCOAp9aErtASmfpVtyNDkzKDzr+cRQ/6y0WoFOrfCDclRFvE/0YTpsQncF4K9f/3/MJ6dIt58sBnTliYcukhuBUUFY5n0orHhSRitnQQh9fh9rI0bInAuDyZ3M3hdx3eCFYYwOolbrQEL0hw3FWkqRA4GENXf16faJMZzsYdOgtJD7Z/BThL0Z4F4xrqHo6zPsJxp4Upd4DXtuyHxGp3/8HxZzj6q8NwKaJclBQcTgnAC9qTHtlNGToBDDz5AgccoQ+NcNoVbLcLqghguGFpq2bZYUvqBr/OO6JVPmn5V6XTAHRoA0eGy+ppZ1vzjwXkTRpQBynyJ2PKM7llUoOqXYGLGeWniqG4wEHxU6wFLWNmil2M=
+  on:
+    tags: true
+    repo: bbridges/koa-protobuf
