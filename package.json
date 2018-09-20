@@ -1,17 +1,28 @@
 {
   "name": "koa-protobuf",
   "version": "0.1.0",
-  "description": "",
+  "description": "protobuf.js parser and sender middleware for koa",
   "main": "lib/koa-protobuf.js",
   "scripts": {
     "test": "nyc mocha",
     "test-no-cover": "mocha"
   },
+  "keywords": [
+    "koa",
+    "middleware",
+    "protobuf",
+    "protocol-buffers",
+    "protobufjs"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/bbridges/koa-protobuf.git"
   },
   "author": "Bradley Bridges <blbridges96@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/bbridges/superagent-protobuf/issues"
+  },
+  "homepage": "https://github.com/bbridges/superagent-protobuf",
   "license": "MIT",
   "engines": {
     "node": ">=7.6.0"
@@ -32,5 +43,12 @@
     "protobufjs": "~6.8.6",
     "request": "^2.87.0",
     "request-promise-native": "^1.0.5"
-  }
+  },
+  "files": [
+    "lib/",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ]
 }
