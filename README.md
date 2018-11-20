@@ -68,7 +68,7 @@ options to `false`.
 ```js
 app.use(sendProtobuf({ sendJson: false }));
 
-router.post('/api/example', parseProtobuf(messages.Example, {
+router.post('/api/example', protobufParser(messages.Example, {
   parseJson: false
 }), (ctx) => {
   // ...
